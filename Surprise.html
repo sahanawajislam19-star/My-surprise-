@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Little Surprise</title>
+</head>
+<body>
+    <h2>💌 A Little Surprise</h2>
+
+    <input id="name" placeholder="Hey, my name is...">
+    <br><br>
+
+    <input id="love" placeholder="I love...">
+    <br><br>
+
+    <button onclick="showMessage()">Reveal</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function showMessage() {
+            const name = document.getElementById("name").value;
+            const love = document.getElementById("love").value;
+
+            document.getElementById("result").innerText =
+                name + " loves " + love + " ❤️";
+        }
+    </script>
+</body>
+</html>
